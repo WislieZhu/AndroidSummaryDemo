@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Interview复习</string>
+    <string name="str">我们知道，当我们在 Activity 中调用,后，系统肯定是需要从布局文件中为每个 View 和 ViewGroup 构造生成对应的 LayoutParams，那这个过程具体是在什么时候呢？下面就来了解下,
+    如果我们使用的 Activity 是继承于 AppCompatActivity，那么方法就会交由代理类 AppCompatDelegateImpl 来完成。contentParent 即 DecorView 中除了标题栏之外的内容区域，
+        即最后我们的布局文件要挂载的地方，布局文件所代表的 View 其实就是通过,的方式添加到 contentParent 中。重点看 LayoutInflater,我们平时想要将布局文件映射为 View 对象
+        时就需要用到 LayoutInflater，Activity 这里也是一样。LayoutInflater 的方法从逻辑上看似乎是有两种解析布局文件的方式：预编译 + xml 解析，这里重点看
+        xm方法从逻辑上看似乎是有两种解析布局文件的方式：预编译 + xml 解析，这里重点看 xm我们知道，当我们在 Activity 中调用,后，系统肯定是需要从布局文件中为每个
+        View 和 ViewGroup 构造生成对应的 LayoutParams，那这个过程具体是在什么时候呢？下面就来了解下,
+    如果我们使用的 Activity 是继承于 AppCompatActivity，那么方法就会交由代理类 AppCompatDelegateImpl 来完成。contentParent 即 DecorView 中除了标题栏之外的内容区域，
+        即最后我们的布局文件要挂载的地方，布局文件所代表的 View 其实就是通过,的方式添加到 contentParent 中。重点看 LayoutInflater,我们平时想要将布局文件映射为 View 对象
+        时就需要用到 LayoutInflater，Activity 这里也是一样。LayoutInflater 的方法从逻辑上看似乎是有两种解析布局文件的方式：预编译 + xml 解析，这里重点看
+        xm方法从逻辑上看似乎是有两种解析布局文件的方式：预编译 + xml 解析，这里重点看 xm我们知道，当我们在 Activity 中调用,后，系统肯定是需要从布局文件中为每个
+        View 和 ViewGroup 构造生成对应的 LayoutParams，那这个过程具体是在什么时候呢？下面就来了解下,
+    如果我们使用的 Activity 是继承于 AppCompatActivity，那么方法就会交由代理类 AppCompatDelegateImpl 来完成。contentParent 即 DecorView 中除了标题栏之外的内容区域，
+        即最后我们的布局文件要挂载的地方，布局文件所代表的 View 其实就是通过,的方式添加到 contentParent 中。重点看 LayoutInflater,我们平时想要将布局文件映射为 View 对象
+        时就需要用到 LayoutInflater，Activity 这里也是一样。LayoutInflater 的方法从逻辑上看似乎是有两种解析布局文件的方式：预编译 + xml 解析，这里重点看
+        xm方法从逻辑上看似乎是有两种解析布局文件的方式：预编译 + xml 解析，这里重点看 xm
+    </string>
+</resources>

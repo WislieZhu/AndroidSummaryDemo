@@ -1,0 +1,18 @@
+ext {
+
+    android = [
+            applicationId    : "com.wislie.interview",
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.1",
+            minSdkVersion    : 16,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0",
+
+
+    ]
+    dependencies = [
+            appcompat                    : "1.2.0",
+            material                     : "1.0.0"
+    ]
+}

@@ -1,0 +1,12 @@
+1。前一个页面处于onStop状态时不会收到消息,只有在onStart---onPause之间会收到
+2.消息的黏性
+
+A->B
+A onCreate onStart onResume onPause
+B onCreate onStart onResume
+A onStop
+
+B ->A
+B onPause
+A onRestart onStart onResume
+B onStop onDestroy

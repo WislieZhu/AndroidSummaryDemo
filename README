@@ -1,0 +1,4 @@
+class Person(var age:Int, name:String)  第一个 类内全局可见; 第二个 构造器内可见(init块,属性初始化)
+    constructor(age:Int):this(age,"ss")
+    constructor(age:Int, name:String)
+
