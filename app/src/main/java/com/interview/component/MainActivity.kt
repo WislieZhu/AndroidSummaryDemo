@@ -12,6 +12,7 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.LifecycleOwner
 import com.interview.component.encryption.EncryptedActivity
 import com.interview.component.receiver.ReceiverActivity
+import com.kotlin.common.ui.BannerActivity
 import com.kotlin.livedata.CircleListActivity
 
 class MainActivity : AppCompatActivity() {
@@ -104,7 +105,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onLiveData(v: View){
-        val intent = Intent(this,CircleListActivity::class.java)
+        val intent = Intent(this,BannerActivity::class.java)
         startActivity(intent)
     }
 }

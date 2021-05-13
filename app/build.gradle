@@ -50,5 +50,5 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-process:2.2.0"
 
     api project(":module_architecture")
-
+    api project(":common_lifecycle_mvp")
 }
