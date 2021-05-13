@@ -1,4 +1,5 @@
-rootProject.name="Android_Interview_Prepare"
+include(":common_lifecycle_mvp")
+rootProject.name="AndroidSummaryDemo"
 include  (":app")
 include(":module_architecture")
 include(":server")
