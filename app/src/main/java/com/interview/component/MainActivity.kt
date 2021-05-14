@@ -105,6 +105,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onLiveData(v: View){
+//        val intent = Intent(this,CircleListActivity::class.java)
+//        startActivity(intent)
+
         val intent = Intent(this,BannerActivity::class.java)
         startActivity(intent)
     }
