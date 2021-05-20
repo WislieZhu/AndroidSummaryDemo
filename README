@@ -2,3 +2,18 @@ class Person(var age:Int, name:String)  第一个 类内全局可见; 第二个 
     constructor(age:Int):this(age,"ss")
     constructor(age:Int, name:String)
 
+
+
+
+BaseMvpPresenter implement IMvpPresenter
+持有IMvpModel,IMvpView
+IMvpModel: 创建，得到model对象
+IMvpView:绑定,解绑,获取, 避免内存泄漏:使用弱引用
+
+BaseMvpModel implement IMvpModel
+持有IMvpPresenter
+
+BaseMvpActivity implement IMvpView
+持有BaseMvpPresenter  p
+onCreate p.bindView
+onDestroy p.unbindView

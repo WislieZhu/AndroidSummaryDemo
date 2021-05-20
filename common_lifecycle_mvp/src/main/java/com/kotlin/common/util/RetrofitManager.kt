@@ -14,29 +14,29 @@ class RetrofitManager {
     companion object {
         fun test() {
             val okHttpClient = OkHttpClient.Builder()
-                .callTimeout(5000, TimeUnit.SECONDS)
-                .writeTimeout(5000, TimeUnit.SECONDS)
-                .readTimeout(5000, TimeUnit.SECONDS)
-                .build()
+                    .callTimeout(5000, TimeUnit.SECONDS)
+                    .writeTimeout(5000, TimeUnit.SECONDS)
+                    .readTimeout(5000, TimeUnit.SECONDS)
+                    .build()
 
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://www.wanandroid.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(okHttpClient)
-                .build()
+                    .baseUrl("https://www.wanandroid.com/")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .client(okHttpClient)
+                    .build()
 
             retrofit.create(IBannerApi::class.java)
-                .getBanner()
-                .enqueue(object : Callback<Any> {
-                    override fun onResponse(call: Call<Any>, response: Response<Any>) {
-                        Log.i("RetrofitManager", "onResponse: ")
-                    }
+                    .getBanner()
+                    .enqueue(object : Callback<Any> {
+                        override fun onResponse(call: Call<Any>, response: Response<Any>) {
+                            Log.i("RetrofitManager", "onResponse: ")
+                        }
 
-                    override fun onFailure(call: Call<Any>, t: Throwable) {
-                        Log.i("RetrofitManager", "onFailure: ")
-                    }
+                        override fun onFailure(call: Call<Any>, t: Throwable) {
+                            Log.i("RetrofitManager", "onFailure: ")
+                        }
 
-                })
+                    })
 
         }
     }

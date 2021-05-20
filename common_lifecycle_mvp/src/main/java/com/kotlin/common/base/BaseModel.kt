@@ -1,8 +1,9 @@
 package com.kotlin.common.base
 
-open class BaseModel {
+import com.kotlin.common.contact.IMvpModel
+import com.kotlin.common.contact.IMvpPresenter
 
-    //retrofit封装
+abstract class BaseModel<P : IMvpPresenter>(val p: P) : IMvpModel {
 
 
 }

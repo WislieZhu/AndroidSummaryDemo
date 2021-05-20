@@ -40,4 +40,5 @@ dependencies {
     api "androidx.appcompat:appcompat:${config.dependencies.extensions}"
     api "com.squareup.retrofit2:retrofit:${config.dependencies.retrofit}"
     api "com.squareup.retrofit2:converter-gson:${config.dependencies.retrofit}"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${config.dependencies.leakcanary}"
 }
